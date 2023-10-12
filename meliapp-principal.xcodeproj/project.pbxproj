@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9447F3222AD87FC9004F0B1B /* ListProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447F3202AD87FC8004F0B1B /* ListProductTableViewCell.swift */; };
+		9447F3232AD87FC9004F0B1B /* ListProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9447F3212AD87FC8004F0B1B /* ListProductTableViewCell.xib */; };
 		94CC45142AD5B4EB00A97423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC45132AD5B4EB00A97423 /* AppDelegate.swift */; };
 		94CC45162AD5B4EB00A97423 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC45152AD5B4EB00A97423 /* SceneDelegate.swift */; };
 		94CC45182AD5B4EB00A97423 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC45172AD5B4EB00A97423 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 		94CC452B2AD5B4EE00A97423 /* meliapp_principalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC452A2AD5B4EE00A97423 /* meliapp_principalTests.swift */; };
 		94CC45352AD5B4EE00A97423 /* meliapp_principalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC45342AD5B4EE00A97423 /* meliapp_principalUITests.swift */; };
 		94CC45372AD5B4EE00A97423 /* meliapp_principalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC45362AD5B4EE00A97423 /* meliapp_principalUITestsLaunchTests.swift */; };
+		94CC455A2AD8570C00A97423 /* ListResultViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CC45592AD8570C00A97423 /* ListResultViewController.storyboard */; };
+		94CC455C2AD8576900A97423 /* ListResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC455B2AD8576900A97423 /* ListResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9447F3202AD87FC8004F0B1B /* ListProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductTableViewCell.swift; sourceTree = "<group>"; };
+		9447F3212AD87FC8004F0B1B /* ListProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListProductTableViewCell.xib; sourceTree = "<group>"; };
 		94CC45102AD5B4EB00A97423 /* meliapp-principal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meliapp-principal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CC45132AD5B4EB00A97423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94CC45152AD5B4EB00A97423 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		94CC45302AD5B4EE00A97423 /* meliapp-principalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "meliapp-principalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CC45342AD5B4EE00A97423 /* meliapp_principalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meliapp_principalUITests.swift; sourceTree = "<group>"; };
 		94CC45362AD5B4EE00A97423 /* meliapp_principalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meliapp_principalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		94CC45592AD8570C00A97423 /* ListResultViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListResultViewController.storyboard; sourceTree = "<group>"; };
+		94CC455B2AD8576900A97423 /* ListResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9447F31F2AD87F87004F0B1B /* ListResultTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9447F3202AD87FC8004F0B1B /* ListProductTableViewCell.swift */,
+				9447F3212AD87FC8004F0B1B /* ListProductTableViewCell.xib */,
+			);
+			path = ListResultTableViewCell;
+			sourceTree = "<group>";
+		};
 		94CC45072AD5B4EB00A97423 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +116,10 @@
 		94CC45122AD5B4EB00A97423 /* meliapp-principal */ = {
 			isa = PBXGroup;
 			children = (
+				94CC45462AD5C60D00A97423 /* Extensions */,
+				94CC45452AD5C5F900A97423 /* Resources */,
+				94CC45442AD5C5CA00A97423 /* Connections */,
+				94CC45432AD5C16D00A97423 /* Modules */,
 				94CC45132AD5B4EB00A97423 /* AppDelegate.swift */,
 				94CC45152AD5B4EB00A97423 /* SceneDelegate.swift */,
 				94CC45172AD5B4EB00A97423 /* ViewController.swift */,
@@ -125,6 +146,149 @@
 				94CC45362AD5B4EE00A97423 /* meliapp_principalUITestsLaunchTests.swift */,
 			);
 			path = "meliapp-principalUITests";
+			sourceTree = "<group>";
+		};
+		94CC45432AD5C16D00A97423 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				94CC45472AD8525F00A97423 /* ListResult */,
+				94CC45482AD8528D00A97423 /* ProductDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		94CC45442AD5C5CA00A97423 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Connections;
+			sourceTree = "<group>";
+		};
+		94CC45452AD5C5F900A97423 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94CC45462AD5C60D00A97423 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		94CC45472AD8525F00A97423 /* ListResult */ = {
+			isa = PBXGroup;
+			children = (
+				94CC45542AD8544D00A97423 /* Model */,
+				94CC45532AD8544200A97423 /* Protocol */,
+				94CC45522AD8543C00A97423 /* Router */,
+				94CC45512AD8543600A97423 /* View */,
+				94CC45502AD8542E00A97423 /* Interactor */,
+				94CC454F2AD8542700A97423 /* Presenter */,
+			);
+			path = ListResult;
+			sourceTree = "<group>";
+		};
+		94CC45482AD8528D00A97423 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				94CC454E2AD8541F00A97423 /* Model */,
+				94CC454D2AD8541500A97423 /* Protocol */,
+				94CC454C2AD8540E00A97423 /* Router */,
+				94CC454B2AD8540800A97423 /* View */,
+				94CC454A2AD853FD00A97423 /* Interactor */,
+				94CC45492AD853F300A97423 /* Presenter */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		94CC45492AD853F300A97423 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		94CC454A2AD853FD00A97423 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		94CC454B2AD8540800A97423 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94CC454C2AD8540E00A97423 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		94CC454D2AD8541500A97423 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		94CC454E2AD8541F00A97423 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94CC454F2AD8542700A97423 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		94CC45502AD8542E00A97423 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		94CC45512AD8543600A97423 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9447F31F2AD87F87004F0B1B /* ListResultTableViewCell */,
+				94CC45592AD8570C00A97423 /* ListResultViewController.storyboard */,
+				94CC455B2AD8576900A97423 /* ListResultViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94CC45522AD8543C00A97423 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		94CC45532AD8544200A97423 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		94CC45542AD8544D00A97423 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +398,8 @@
 				94CC45202AD5B4EE00A97423 /* LaunchScreen.storyboard in Resources */,
 				94CC451D2AD5B4EE00A97423 /* Assets.xcassets in Resources */,
 				94CC451B2AD5B4EB00A97423 /* Main.storyboard in Resources */,
+				94CC455A2AD8570C00A97423 /* ListResultViewController.storyboard in Resources */,
+				9447F3232AD87FC9004F0B1B /* ListProductTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +427,8 @@
 				94CC45182AD5B4EB00A97423 /* ViewController.swift in Sources */,
 				94CC45142AD5B4EB00A97423 /* AppDelegate.swift in Sources */,
 				94CC45162AD5B4EB00A97423 /* SceneDelegate.swift in Sources */,
+				94CC455C2AD8576900A97423 /* ListResultViewController.swift in Sources */,
+				9447F3222AD87FC9004F0B1B /* ListProductTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +614,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "meliapp-principal/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = ListResultViewController.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -474,7 +642,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "meliapp-principal/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = ListResultViewController.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
