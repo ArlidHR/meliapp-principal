@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller-->
+        <!--List Result View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="SearchViewController" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="ListResultViewController" customModule="meliapp_principal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,13 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IIv-qH-kvC">
                                         <rect key="frame" x="10" y="66" width="373" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="SearchTextField:" destination="xsq-yh-2IN" eventType="editingDidEnd" id="zKQ-bi-PC2"/>
                                         </connections>
@@ -64,6 +70,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="listResultTableView" destination="C6y-ge-ZUH" id="h0u-PW-9HC"/>
                         <outlet property="searchTextField" destination="IIv-qH-kvC" id="MHy-EF-4xk"/>
                     </connections>
                 </viewController>
